@@ -1,0 +1,27 @@
+@page
+@model LeerModel
+@{
+    ViewData["Title"] = "Leer Mensaje";
+}
+
+<h2>📤 Leer mensaje recibido</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="archivo" class="form-label">Selecciona el archivo XML recibido:</label>
+        <input type="file" class="form-control" id="archivo" name="ArchivoXml" accept=".xml" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Leer mensaje</button>
+</form>
+
+@if (Model.MensajeDescifrado != null)
+{
+    <div class="alert alert-success mt-3">
+        <strong>Mensaje descifrado:</strong>
+        <p>@Model.MensajeDescifrado</p>
+        <hr />
+        <strong>Remitente:</strong> @Model.Remitente <br />
+        <strong>Código:</strong> @Model.Codigo <br />
+        <strong>Fecha:</strong> @Model.Fecha
+    </div>
+}

@@ -1,0 +1,36 @@
+@page
+@model CrearModel
+@{
+    ViewData["Title"] = "Crear Mensaje Secreto";
+}
+
+<h2>✏️ Crear un mensaje secreto</h2>
+
+<form method="post">
+    <div>
+        <label>Nombre del remitente:</label><br />
+        <input asp-for="Remitente" class="form-control" />
+    </div>
+    <div>
+        <label>Mensaje secreto:</label><br />
+        <textarea asp-for="Mensaje" class="form-control"></textarea>
+    </div>
+    <div>
+        <label>Código:</label><br />
+        <input asp-for="Codigo" class="form-control" />
+    </div>
+    <div>
+        <label>Fecha:</label><br />
+        <input asp-for="Fecha" type="date" class="form-control" />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-success">Guardar mensaje</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.MensajeConfirmacion))
+{
+    <div class="alert alert-success mt-3">
+        @Model.MensajeConfirmacion
+    </div>
+}
