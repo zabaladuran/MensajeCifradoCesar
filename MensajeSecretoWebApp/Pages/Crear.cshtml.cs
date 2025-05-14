@@ -48,20 +48,20 @@ public class CrearModel : PageModel // Define el modelo de la página Razor.
         int desplazamiento = 0;
         int.TryParse(Codigo, out desplazamiento); // Si no es número, desplazamiento será 0
 
-        var resultado = new StringBuilder();
-        foreach (char c in texto)
+        var resultado = new StringBuilder(); // Crea un objeto StringBuilder para construir el texto cifrado carácter por carácter.
+        foreach (char c in texto) // Recorre cada carácter del texto original.
         {
-            if (char.IsLetter(c))
+            if (char.IsLetter(c)) // Si el carácter es una letra (mayúscula o minúscula)...
             {
-                char d = char.IsUpper(c) ? 'A' : 'a';
-                resultado.Append((char)(((c + desplazamiento - d) % 26) + d));
+                char d = char.IsUpper(c) ? 'A' : 'a'; // Determina si es mayúscula ('A') o minúscula ('a') para ajustar el rango ASCII.
+                resultado.Append((char)(((c + desplazamiento - d) % 26) + d)); // Aplica el cifrado César: desplaza la letra según el código y la agrega al resultado.
             }
             else
             {
-                resultado.Append(c);
+                resultado.Append(c); // Si no es una letra, agrega el carácter tal cual al resultado (no lo cifra).
             }
         }
-        return resultado.ToString(); // Devuelve el texto cifrado.
+        return resultado.ToString(); // Convierte el StringBuilder a string y lo retorna como texto cifrado.
     }
 }
 

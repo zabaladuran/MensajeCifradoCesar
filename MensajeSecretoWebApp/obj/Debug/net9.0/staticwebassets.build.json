@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DTGXDtWoq7ns55ZsYkrg6aksrEaEC7K1/K8UG/zMy9M=",
+  "Hash": "Elo3yusSZEX7Um7/3F8Kwxg2TbOmtm/VNv5lsK9dZv4=",
   "Source": "MensajeSecretoWebApp",
   "BasePath": "_content/MensajeSecretoWebApp",
   "Mode": "Default",
@@ -290,12 +290,12 @@
       "OriginalItemSpec": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-m3dqdaqf51.gz",
+      "Identity": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-w0r2npd25m.gz",
       "SourceId": "MensajeSecretoWebApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MensajeSecretoWebApp",
-      "RelativePath": "Mensajes/MensajeSecreto_hola#[.{fingerprint=m3dqdaqf51}]?.xml.gz",
+      "RelativePath": "Mensajes/MensajeSecreto_hola#[.{fingerprint=w0r2npd25m}]?.xml.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -304,8 +304,8 @@
       "RelatedAsset": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_hola.xml",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "a8bj5f55sh",
-      "Integrity": "Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk=",
+      "Fingerprint": "atie2ow538",
+      "Integrity": "vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_hola.xml"
@@ -792,6 +792,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\lukrn3wv7g-7e9cpl7d48.gz",
+      "SourceId": "MensajeSecretoWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/MensajeSecretoWebApp",
+      "RelativePath": "Mensajes/MensajeSecreto_samu#[.{fingerprint=7e9cpl7d48}]?.xml.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bhsqrfvl37",
+      "Integrity": "USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml"
     },
     {
       "Identity": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\ly330m8grq-s35ty4nyc5.gz",
@@ -2761,11 +2782,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m3dqdaqf51",
-      "Integrity": "LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg=",
+      "Fingerprint": "w0r2npd25m",
+      "Integrity": "UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Mensajes\\MensajeSecreto_hola.xml"
+    },
+    {
+      "Identity": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml",
+      "SourceId": "MensajeSecretoWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\",
+      "BasePath": "_content/MensajeSecretoWebApp",
+      "RelativePath": "Mensajes/MensajeSecreto_samu#[.{fingerprint}]?.xml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7e9cpl7d48",
+      "Integrity": "j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Mensajes\\MensajeSecreto_samu.xml"
     }
   ],
   "Endpoints": [
@@ -21328,13 +21370,13 @@
       ]
     },
     {
-      "Route": "Mensajes/MensajeSecreto_hola.m3dqdaqf51.xml",
-      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-m3dqdaqf51.gz",
+      "Route": "Mensajes/MensajeSecreto_hola.w0r2npd25m.xml",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-w0r2npd25m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005076142132"
+          "Quality": "0.005102040816"
         }
       ],
       "ResponseHeaders": [
@@ -21344,15 +21386,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "196"
+          "Value": "195"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk=\""
+          "Value": "\"vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21372,13 +21414,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg=\""
+          "Value": "W/\"UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m3dqdaqf51"
+          "Value": "w0r2npd25m"
         },
         {
           "Name": "label",
@@ -21386,12 +21428,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg="
+          "Value": "sha256-UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M="
         }
       ]
     },
     {
-      "Route": "Mensajes/MensajeSecreto_hola.m3dqdaqf51.xml",
+      "Route": "Mensajes/MensajeSecreto_hola.w0r2npd25m.xml",
       "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_hola.xml",
       "Selectors": [],
       "ResponseHeaders": [
@@ -21409,11 +21451,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg=\""
+          "Value": "\"UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21423,7 +21465,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m3dqdaqf51"
+          "Value": "w0r2npd25m"
         },
         {
           "Name": "label",
@@ -21431,13 +21473,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg="
+          "Value": "sha256-UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M="
         }
       ]
     },
     {
-      "Route": "Mensajes/MensajeSecreto_hola.m3dqdaqf51.xml.gz",
-      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-m3dqdaqf51.gz",
+      "Route": "Mensajes/MensajeSecreto_hola.w0r2npd25m.xml.gz",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-w0r2npd25m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21446,7 +21488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "196"
+          "Value": "195"
         },
         {
           "Name": "Content-Type",
@@ -21454,11 +21496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk=\""
+          "Value": "\"vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21476,7 +21518,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m3dqdaqf51"
+          "Value": "w0r2npd25m"
         },
         {
           "Name": "label",
@@ -21484,18 +21526,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk="
+          "Value": "sha256-vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88="
         }
       ]
     },
     {
       "Route": "Mensajes/MensajeSecreto_hola.xml",
-      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-m3dqdaqf51.gz",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-w0r2npd25m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005076142132"
+          "Quality": "0.005102040816"
         }
       ],
       "ResponseHeaders": [
@@ -21505,15 +21547,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "196"
+          "Value": "195"
         },
         {
           "Name": "ETag",
-          "Value": "\"Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk=\""
+          "Value": "\"vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21533,13 +21575,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg=\""
+          "Value": "W/\"UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg="
+          "Value": "sha256-UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M="
         }
       ]
     },
@@ -21562,11 +21604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg=\""
+          "Value": "\"UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21576,13 +21618,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LkYvut4Nf0P1xqWTksEfgjfUzcwiYHCC1CWkI2meBXg="
+          "Value": "sha256-UMCmiw29togVaS5kmBwkbK+jdSH01vKRoKTuL0uI22M="
         }
       ]
     },
     {
       "Route": "Mensajes/MensajeSecreto_hola.xml.gz",
-      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-m3dqdaqf51.gz",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\7xuiqdcuse-w0r2npd25m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21591,7 +21633,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "196"
+          "Value": "195"
         },
         {
           "Name": "Content-Type",
@@ -21599,11 +21641,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk=\""
+          "Value": "\"vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 21:42:35 GMT"
+          "Value": "Wed, 14 May 2025 21:45:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21621,7 +21663,305 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Zu///90yw4y+3qpmJ0fwz2m7VlH9Z8DJUAYG4WBZVtk="
+          "Value": "sha256-vjjp6SizHbhRp3DjeG0/KirSi/GBraEpZTi6UHfsD88="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.7e9cpl7d48.xml",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\lukrn3wv7g-7e9cpl7d48.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005102040816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7e9cpl7d48"
+        },
+        {
+          "Name": "label",
+          "Value": "Mensajes/MensajeSecreto_samu.xml"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.7e9cpl7d48.xml",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7e9cpl7d48"
+        },
+        {
+          "Name": "label",
+          "Value": "Mensajes/MensajeSecreto_samu.xml"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.7e9cpl7d48.xml.gz",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\lukrn3wv7g-7e9cpl7d48.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7e9cpl7d48"
+        },
+        {
+          "Name": "label",
+          "Value": "Mensajes/MensajeSecreto_samu.xml.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.xml",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\lukrn3wv7g-7e9cpl7d48.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005102040816"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.xml",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j5efv1hXnMxwC1F7yF92WI0GhanpH+59hTYDI2VNuZI="
+        }
+      ]
+    },
+    {
+      "Route": "Mensajes/MensajeSecreto_samu.xml.gz",
+      "AssetFile": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\obj\\Debug\\net9.0\\compressed\\lukrn3wv7g-7e9cpl7d48.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 21:43:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-USYMgrgZsK7KmdridOr3uGvlIk8xCz2KcCnSAhYndhc="
         }
       ]
     },

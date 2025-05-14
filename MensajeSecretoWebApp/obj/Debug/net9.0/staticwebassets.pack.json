@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Mensajes\\MensajeSecreto_hola.xml"
     },
     {
+      "Id": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_samu.xml",
+      "PackagePath": "staticwebassets\\Mensajes\\MensajeSecreto_samu.xml"
+    },
+    {
       "Id": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
