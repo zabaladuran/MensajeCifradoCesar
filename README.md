@@ -1,6 +1,6 @@
 # MensajeCifradoCesar
 
-Aplicación web desarrollada con .NET Razor Pages para cifrar y descifrar mensajes utilizando el Cifrado César (desplazamiento de +3 letras).
+Aplicación web desarrollada con .NET Razor Pages para cifrar y descifrar mensajes utilizando el Cifrado César (desplazamiento de X letras).
 
 ## Requisitos
 
@@ -91,6 +91,10 @@ Esto levantará el servidor en [https://localhost:5001](https://localhost:5001) 
 
 Las contribuciones son bienvenidas. Puedes abrir issues o enviar pull requests.
 
+## Videos recomendados
+
+- [Cifrado César explicado por Federico Diaz](https://www.youtube.com/watch?v=DT3bsFpuikY&ab_channel=FedericoDiaz)
+- [Cifrado César explicado por Isaac López](https://www.youtube.com/watch?v=o6jrfkGqMGQ&ab_channel=IsaacL%C3%B3pez)
 ---
 
 Desarrollado por [Quinntero].
