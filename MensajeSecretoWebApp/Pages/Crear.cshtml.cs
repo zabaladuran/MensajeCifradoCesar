@@ -44,11 +44,22 @@ public class CrearModel : PageModel // Define el modelo de la página Razor.
 
     private string Cifrar(string texto) // Método privado para cifrar el mensaje usando el cifrado César.
     {
-        // Cifrado César simple (desplazamiento de 3 caracteres)
-        var resultado = new StringBuilder(); // Crea un StringBuilder para construir el texto cifrado.
-        foreach (char c in texto) // Recorre cada carácter del texto original.
+        // Usa el código ingresado como desplazamiento
+        int desplazamiento = 0;
+        int.TryParse(Codigo, out desplazamiento); // Si no es número, desplazamiento será 0
+
+        var resultado = new StringBuilder();
+        foreach (char c in texto)
         {
-            resultado.Append((char)(c + 3)); // Desplaza el carácter 3 posiciones en el código ASCII y lo agrega al resultado.
+            if (char.IsLetter(c))
+            {
+                char d = char.IsUpper(c) ? 'A' : 'a';
+                resultado.Append((char)(((c + desplazamiento - d) % 26) + d));
+            }
+            else
+            {
+                resultado.Append(c);
+            }
         }
         return resultado.ToString(); // Devuelve el texto cifrado.
     }

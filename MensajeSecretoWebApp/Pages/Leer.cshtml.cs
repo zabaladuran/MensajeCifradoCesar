@@ -40,11 +40,23 @@ public class LeerModel : PageModel // Define la clase del modelo de la página R
 
     private string Descifrar(string texto) // Método privado para descifrar el mensaje usando el cifrado César.
     {
-        // Descifrado César simple (desplazamiento de 3 caracteres hacia atrás)
-        var resultado = new StringBuilder(); // Crea un StringBuilder para construir el texto descifrado.
-        foreach (char c in texto) // Recorre cada carácter del texto cifrado.
+        // Usa el código del mensaje como desplazamiento
+        int desplazamiento = 0;
+        int.TryParse(Codigo, out desplazamiento); // Si no es número, desplazamiento será 0
+
+        var resultado = new StringBuilder();
+        foreach (char c in texto)
         {
-            resultado.Append((char)(c - 3)); // Desplaza el carácter 3 posiciones hacia atrás y lo agrega al resultado.
+            if (char.IsLetter(c))
+            {
+                char d = char.IsUpper(c) ? 'A' : 'a';
+                // Para descifrar, se resta el desplazamiento y se ajusta el módulo
+                resultado.Append((char)(((c - desplazamiento - d + 26) % 26) + d));
+            }
+            else
+            {
+                resultado.Append(c);
+            }
         }
         return resultado.ToString(); // Devuelve el texto descifrado.
     }

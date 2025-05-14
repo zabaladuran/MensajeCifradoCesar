@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MensajeSecretoWebApp.20o67vpgc5.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\Mensajes\\MensajeSecreto_hola.xml",
+      "PackagePath": "staticwebassets\\Mensajes\\MensajeSecreto_hola.xml"
+    },
+    {
       "Id": "C:\\Users\\DURAN\\Desktop\\MensajeCifradoCesar\\MensajeSecretoWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
