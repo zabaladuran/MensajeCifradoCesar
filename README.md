@@ -2,6 +2,18 @@
 
 Aplicación web desarrollada con .NET Razor Pages para cifrar y descifrar mensajes utilizando el Cifrado César (desplazamiento de X letras).
 
+## Pagina inicial
+![{0449ACE6-466F-4171-974A-F925E4F717D6}](https://github.com/user-attachments/assets/d7c59dbe-f4b5-4811-84e6-25cdfaa91341)
+
+## formularios
+### 1 
+![{F03816AC-3507-4C96-BCF6-9EDB376A8497}](https://github.com/user-attachments/assets/be1568cf-7bfb-4dd1-a2ee-e84315c09367)
+### 2 
+![{0CDD854C-9675-4B3E-A1DF-49A60CC1CFF6}](https://github.com/user-attachments/assets/1efd4b92-0578-4b2a-a027-32c84ab68653)
+
+
+
+
 ## Requisitos
 
 - [.NET 9.0 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
