@@ -10,7 +10,7 @@ Aplicación web desarrollada con .NET Razor Pages para cifrar y descifrar mensaj
 ## Clonar el repositorio
 
 ```sh
-git clone https://github.com/tu-usuario/MensajeCifradoCesar.git
+git clone https://github.com/zabaladuran/MensajeCifradoCesar.git
 cd MensajeCifradoCesar
 ```
 
