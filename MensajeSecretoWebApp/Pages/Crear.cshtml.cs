@@ -1,63 +1,63 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Xml.Serialization;
-using System.Text;
-using System.IO;
+using Microsoft.AspNetCore.Mvc; // Importa funcionalidades para controladores y atributos de MVC.
+using Microsoft.AspNetCore.Mvc.RazorPages; // Importa funcionalidades para Razor Pages.
+using System.Xml.Serialization; // Permite la serialización XML de objetos.
+using System.Text; // Proporciona clases para manipulación de texto y cadenas.
+using System.IO; // Permite trabajar con archivos y directorios.
 
-public class CrearModel : PageModel
+public class CrearModel : PageModel // Define el modelo de la página Razor.
 {
-    [BindProperty] public string Remitente { get; set; }
-    [BindProperty] public string Mensaje { get; set; }
-    [BindProperty] public string Codigo { get; set; }
-    [BindProperty] public DateTime Fecha { get; set; }
+    [BindProperty] public string Remitente { get; set; } // Propiedad enlazada al formulario para el remitente.
+    [BindProperty] public string Mensaje { get; set; } // Propiedad enlazada al formulario para el mensaje.
+    [BindProperty] public string Codigo { get; set; } // Propiedad enlazada al formulario para el código.
+    [BindProperty] public DateTime Fecha { get; set; } // Propiedad enlazada al formulario para la fecha.
 
-    public string MensajeConfirmacion { get; set; }
+    public string MensajeConfirmacion { get; set; } // Propiedad para mostrar un mensaje de confirmación.
 
-    public void OnGet() { }
+    public void OnGet() { } // Método que se ejecuta en solicitudes GET (cuando se carga la página).
 
-    public void OnPost()
+    public void OnPost() // Método que se ejecuta en solicitudes POST (cuando se envía el formulario).
     {
-        var mensajeSecreto = new MensajeSecreto
+        var mensajeSecreto = new MensajeSecreto // Crea un nuevo objeto MensajeSecreto.
         {
-            Remitente = Remitente,
-            Mensaje = Cifrar(Mensaje),
-            Codigo = Codigo,
-            Fecha = Fecha.ToString("yyyy-MM-dd")
+            Remitente = Remitente, // Asigna el remitente.
+            Mensaje = Cifrar(Mensaje), // Cifra el mensaje antes de guardarlo.
+            Codigo = Codigo, // Asigna el código.
+            Fecha = Fecha.ToString("yyyy-MM-dd") // Asigna la fecha en formato de texto.
         };
 
-        var nombreArchivo = $"MensajeSecreto_{Remitente.Replace(" ", "_")}.xml";
-        var rutaCarpeta = Path.Combine("wwwroot", "Mensajes");
+        var nombreArchivo = $"MensajeSecreto_{Remitente.Replace(" ", "_")}.xml"; // Genera el nombre del archivo XML.
+        var rutaCarpeta = Path.Combine("wwwroot", "Mensajes"); // Define la ruta de la carpeta donde se guardará el archivo.
 
-        if (!Directory.Exists(rutaCarpeta))
-            Directory.CreateDirectory(rutaCarpeta);
+        if (!Directory.Exists(rutaCarpeta)) // Si la carpeta no existe...
+            Directory.CreateDirectory(rutaCarpeta); // ...la crea.
 
-        var rutaCompleta = Path.Combine(rutaCarpeta, nombreArchivo);
+        var rutaCompleta = Path.Combine(rutaCarpeta, nombreArchivo); // Une la ruta de la carpeta y el nombre del archivo.
 
-        using (var writer = new StreamWriter(rutaCompleta))
+        using (var writer = new StreamWriter(rutaCompleta)) // Abre un StreamWriter para escribir el archivo.
         {
-            var serializer = new XmlSerializer(typeof(MensajeSecreto));
-            serializer.Serialize(writer, mensajeSecreto);
+            var serializer = new XmlSerializer(typeof(MensajeSecreto)); // Crea un serializador XML para el tipo MensajeSecreto.
+            serializer.Serialize(writer, mensajeSecreto); // Serializa el objeto y lo guarda en el archivo.
         }
 
-        MensajeConfirmacion = $"El mensaje fue guardado como '{nombreArchivo}' en la carpeta /wwwroot/Mensajes/";
+        MensajeConfirmacion = $"El mensaje fue guardado como '{nombreArchivo}' en la carpeta /wwwroot/Mensajes/"; // Asigna el mensaje de confirmación.
     }
 
-    private string Cifrar(string texto)
+    private string Cifrar(string texto) // Método privado para cifrar el mensaje usando el cifrado César.
     {
         // Cifrado César simple (desplazamiento de 3 caracteres)
-        var resultado = new StringBuilder();
-        foreach (char c in texto)
+        var resultado = new StringBuilder(); // Crea un StringBuilder para construir el texto cifrado.
+        foreach (char c in texto) // Recorre cada carácter del texto original.
         {
-            resultado.Append((char)(c + 3));
+            resultado.Append((char)(c + 3)); // Desplaza el carácter 3 posiciones en el código ASCII y lo agrega al resultado.
         }
-        return resultado.ToString();
+        return resultado.ToString(); // Devuelve el texto cifrado.
     }
 }
 
-public class MensajeSecreto
+public class MensajeSecreto // Clase que representa el mensaje secreto a guardar.
 {
-    public string Remitente { get; set; }
-    public string Mensaje { get; set; }
-    public string Codigo { get; set; }
-    public string Fecha { get; set; }
+    public string Remitente { get; set; } // Propiedad para el remitente.
+    public string Mensaje { get; set; } // Propiedad para el mensaje cifrado.
+    public string Codigo { get; set; } // Propiedad para el código.
+    public string Fecha { get; set; } // Propiedad para la fecha.
 }
