@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MensajeSecretoWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b498b3704419b169f5d33be813760659b27fd7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eb39c7d5004d2631bec73c3d8e30afa5dbaabf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("MensajeSecretoWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MensajeSecretoWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

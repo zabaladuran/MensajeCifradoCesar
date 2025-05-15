@@ -1,71 +1,78 @@
-using Microsoft.AspNetCore.Mvc; // Importa funcionalidades para controladores y acciones MVC.
-using Microsoft.AspNetCore.Mvc.RazorPages; // Importa soporte para páginas Razor.
-using System.Xml.Serialization; // Permite la serialización y deserialización de XML.
-using System.Text; // Proporciona clases para manipulación de texto, como StringBuilder.
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Xml.Serialization;
+using System.Text;
 
-public class LeerModel : PageModel // Define la clase del modelo de la página Razor llamada LeerModel.
+// esta es la pagina pa leer un mensaje secreto desde un archivo xml
+public class LeerModel : PageModel
 {
-    [BindProperty] // Permite el enlace automático de datos del formulario a la propiedad.
-    public IFormFile ArchivoXml { get; set; } // Propiedad para recibir el archivo XML subido por el usuario.
+    // propiedad pa recibir el archivo xml subido desde el form
+    [BindProperty] public IFormFile ArchivoXml { get; set; }
 
-    public string MensajeDescifrado { get; set; } // Almacena el mensaje descifrado.
-    public string Remitente { get; set; } // Almacena el remitente del mensaje.
-    public string Codigo { get; set; } // Almacena el código del mensaje.
-    public string Fecha { get; set; } // Almacena la fecha del mensaje.
+    // propiedades pa mostrar los datos que se leen del xml
+    public string MensajeDescifrado { get; set; }
+    public string Remitente { get; set; }
+    public string Codigo { get; set; }
+    public string Fecha { get; set; }
 
-    public void OnGet() { } // Método que se ejecuta en solicitudes GET, aquí no hace nada.
+    // este metodo corre cuando se entra a la pagina (GET), aca no hace nada
+    public void OnGet() { }
 
-    public async Task<IActionResult> OnPostAsync() // Método que se ejecuta en solicitudes POST (cuando se envía el formulario).
+    // este metodo se ejecuta cuando el user sube un archivo y manda el form (POST)
+    public async Task<IActionResult> OnPostAsync()
     {
-        if (ArchivoXml == null) // Verifica si no se ha subido ningún archivo.
+        // si el usuario no selecciono ningun archivo muestra un error
+        if (ArchivoXml == null)
         {
-            ModelState.AddModelError("", "Debes seleccionar un archivo."); // Agrega un error al modelo si no hay archivo.
-            return Page(); // Retorna la misma página para mostrar el error.
+            ModelState.AddModelError("", "Debes seleccionar un archivo.");
+            return Page(); // vuelve a cargar la pagina con el error
         }
 
-        MensajeSecreto mensaje; // Declara una variable para almacenar el mensaje deserializado.
-        using (var stream = ArchivoXml.OpenReadStream()) // Abre un stream para leer el archivo subido.
+        // aca se va a guardar el contenido del xml despues de deserializarlo
+        MensajeSecreto mensaje;
+
+        // abre el archivo pa leerlo
+        using (var stream = ArchivoXml.OpenReadStream())
         {
-            var serializer = new XmlSerializer(typeof(MensajeSecreto)); // Crea un serializador XML para la clase MensajeSecreto.
-            mensaje = (MensajeSecreto)serializer.Deserialize(stream); // Deserializa el XML a un objeto MensajeSecreto.
+            var serializer = new XmlSerializer(typeof(MensajeSecreto));
+            mensaje = (MensajeSecreto)serializer.Deserialize(stream); // convierte el xml a obj
         }
 
-        Remitente = mensaje.Remitente; // Asigna el remitente del mensaje deserializado.
-        Codigo = mensaje.Codigo; // Asigna el código del mensaje deserializado.
-        Fecha = mensaje.Fecha; // Asigna la fecha del mensaje deserializado.
-        MensajeDescifrado = Descifrar(mensaje.Mensaje); // Descifra el mensaje y lo asigna.
+        // saca los datos del mensaje y los asigna a las propiedades de la pagina
+        Remitente = mensaje.Remitente;
+        Codigo = mensaje.Codigo;
+        Fecha = mensaje.Fecha;
+        MensajeDescifrado = Descifrar(mensaje.Mensaje); // descifra el mensaje
 
-        return Page(); // Retorna la página con los datos procesados.
+        return Page(); // recarga la pagina con los datos cargados
     }
 
-    private string Descifrar(string texto) // Método privado para descifrar el mensaje usando el cifrado César.
+    // metodo pa descifrar el texto que viene cifrado (cifrado cesar -3)
+    private string Descifrar(string texto)
     {
-        // Usa el código del mensaje como desplazamiento
-        int desplazamiento = 0;
-        int.TryParse(Codigo, out desplazamiento); // Si no es número, desplazamiento será 0
-
         var resultado = new StringBuilder();
         foreach (char c in texto)
         {
+            // si es letra la descifra, si no la deja como esta
             if (char.IsLetter(c))
             {
-                char d = char.IsUpper(c) ? 'A' : 'a';
-                // Para descifrar, se resta el desplazamiento y se ajusta el módulo
-                resultado.Append((char)(((c - desplazamiento - d + 26) % 26) + d));
+                char a = char.IsUpper(c) ? 'A' : 'a'; // ve si es mayus o minus
+                resultado.Append((char)((((c - a + 26 - 3) % 26) + a))); // le resta 3
             }
             else
             {
-                resultado.Append(c);
+                resultado.Append(c); // no cambia los signos, espacios, numeros, etc
             }
         }
-        return resultado.ToString(); // Devuelve el texto descifrado.
+        return resultado.ToString(); // devuelve el mensaje original
     }
 
-    public class MensajeSecreto // Clase interna que representa la estructura del mensaje secreto.
+    // clase interna que representa el mensaje secreto, igual a la usada pa guardar
+    public class MensajeSecreto
     {
-        public string Remitente { get; set; } // Propiedad para el remitente.
-        public string Mensaje { get; set; } // Propiedad para el mensaje cifrado.
-        public string Codigo { get; set; } // Propiedad para el código.
-        public string Fecha { get; set; } // Propiedad para la fecha.
+        public string Remitente { get; set; }
+        public string Mensaje { get; set; } // mensaje cifrado en el xml
+        public string Codigo { get; set; }
+        public string Fecha { get; set; }
     }
 }

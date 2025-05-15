@@ -1,27 +1,27 @@
-@page 
-@model LeerModel // Especifica el modelo de página que se usará para la lógica y los datos.
-@{ 
-    ViewData["Title"] = "Leer Mensaje"; // Asigna el título de la página para la vista.
+@page
+@model LeerModel
+@{
+    ViewData["Title"] = "Leer Mensaje";
 }
 
-<h2>📤 Leer mensaje recibido</h2> 
+<h2>📤 Leer mensaje recibido</h2>
 
-<form method="post" enctype="multipart/form-data"> @* Inicia un formulario HTML que enviará los datos por método POST y permite subir archivos.*@
+<form method="post" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="archivo" class="form-label">Selecciona el archivo XML recibido:</label> @* Etiqueta para el campo de selección de archivo.*@
-        <input type="file" class="form-control" id="archivo" name="ArchivoXml" accept=".xml" required /> @* Campo para seleccionar el archivo XML, obligatorio.*@
+        <label for="archivo" class="form-label">Selecciona el archivo XML recibido:</label>
+        <input type="file" class="form-control" id="archivo" name="ArchivoXml" accept=".xml" required />
     </div>
-    <button type="submit" class="btn btn-primary">Leer mensaje</button> 
+    <button type="submit" class="btn btn-primary">Leer mensaje</button>
 </form>
 
-@if (Model.MensajeDescifrado != null) // Si el mensaje descifrado no es nulo...
+@if (Model.MensajeDescifrado != null)
 {
-    <div class="alert alert-success mt-3"> @* Muestra un cuadro de alerta de éxito.*@
+    <div class="alert alert-success mt-3">
         <strong>Mensaje descifrado:</strong>
-        <p>@Model.MensajeDescifrado</p> @*Muestra el mensaje descifrado.*@
+        <p>@Model.MensajeDescifrado</p>
         <hr />
-        <strong>Remitente:</strong> @Model.Remitente <br /> @* Muestra el remitente.*@
-        <strong>Código:</strong> @Model.Codigo <br /> @* Muestra el código.*@
-        <strong>Fecha:</strong> @Model.Fecha @* Muestra la fecha.*@
+        <strong>Remitente:</strong> @Model.Remitente <br />
+        <strong>Código:</strong> @Model.Codigo <br />
+        <strong>Fecha:</strong> @Model.Fecha
     </div>
 }

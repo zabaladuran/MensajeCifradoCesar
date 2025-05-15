@@ -1,35 +1,35 @@
-@page // Indica que esta página es una Razor Page y puede ser accedida directamente por URL.
-@model CrearModel // Especifica el modelo de página que se usará para la lógica y los datos.
-@{ // Inicio de un bloque de código Razor.
-    ViewData["Title"] = "Crear Mensaje Secreto"; // Asigna el título de la página para la vista.
+@page
+@model CrearModel
+@{
+    ViewData["Title"] = "Crear Mensaje Secreto";
 }
 
-<h2>✏️ Crear un mensaje secreto</h2> 
+<h2>Hacer un mensaje</h2>
 
-<form method="post"> @* Inicia un formulario HTML que enviará los datos por método POST.*@
+<form method="post">
     <div>
-        <label>Nombre del remitente:</label><br /> 
-        <input asp-for="Remitente" class="form-control" /> 
+        <label>Nombre del remitente:</label><br />
+        <input asp-for="Remitente" class="form-control" />
     </div>
     <div>
-        <label>Mensaje secreto:</label><br /> 
-        <textarea asp-for="Mensaje" class="form-control"></textarea> 
+        <label>Mensaje secreto:</label><br />
+        <textarea asp-for="Mensaje" class="form-control"></textarea>
     </div>
     <div>
-        <label>Código:</label><br /> 
-        <input asp-for="Codigo" class="form-control" /> 
+        <label>Código:</label><br />
+        <input asp-for="Codigo" class="form-control" />
     </div>
     <div>
-        <label>Fecha:</label><br /> 
-        <input asp-for="Fecha" type="date" class="form-control" /> 
+        <label>Fecha:</label><br />
+        <input asp-for="Fecha" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
     </div>
+    <br />
+    <button type="submit" class="btn btn-success">Guardar mensaje</button>
+</form>
 
-    <br /> 
-    <button type="submit" class="btn btn-success">Guardar mensaje</button> 
-</form> 
-@if (!string.IsNullOrEmpty(Model.MensajeConfirmacion)) // Si el mensaje de confirmación no está vacío o nulo...
+@if (!string.IsNullOrEmpty(Model.MensajeConfirmacion))
 {
-    <div class="alert alert-success mt-3"> // Muestra un cuadro de alerta de éxito.
-        @Model.MensajeConfirmacion // Muestra el mensaje de confirmación al usuario.
+    <div class="alert alert-success mt-3">
+        @Model.MensajeConfirmacion
     </div>
 }
